@@ -1,65 +1,67 @@
 body {
-	background-color: #fff;
-	transition: background-color 0.5s ease-in-out;
+	background-color: #fff;  /* Hintergrundfarbe des Body-Elements auf weiß setzen */
+	transition: background-color 0.5s ease-in-out;  /* Hintergrundfarbe-Übergangseffekt mit Dauer von 0.5 Sekunden und einem sanften Beschleunigungs- und Verzögerungsverhalten hinzufügen */
 }
 
 body.dark-mode {
-	background-color: #000;
+	background-color: #000;  /* Wenn die Klasse "dark-mode" auf dem Body-Element vorhanden ist, die Hintergrundfarbe auf schwarz setzen */
 }
 
 h1 {
-	text-align: center;
-	font-size: 2em;
-	margin-top: 50px;
-	color: #000;
-	transition: color 0.5s ease-in-out;
+	text-align: center;  /* Text in der H1-Überschrift zentrieren */
+	font-size: 2em;  /* Schriftgröße der H1-Überschrift auf 2em (entspricht 32px) setzen */
+	margin-top: 50px;  /* Abstand von 50px zum oberen Rand setzen */
+	color: #000;  /* Textfarbe auf schwarz setzen */
+	transition: color 0.5s ease-in-out;  /* Textfarbe-Übergangseffekt mit Dauer von 0.5 Sekunden und einem sanften Beschleunigungs- und Verzögerungsverhalten hinzufügen */
 }
 
+
 body.dark-mode h1 {
-	color: #fff;
+	color: #fff;  /* Wenn die Klasse "dark-mode" auf dem Body-Element vorhanden ist, die Textfarbe der H1-Überschrift auf weiß setzen */
 }
 
 .button-container {
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
-	position: relative;
+	display: flex;  /* Button-Container als flexibles Element anzeigen */
+	justify-content: center;  /* Elemente innerhalb des Button-Containers horizontal zentrieren */
+	margin-top: 50px;  /* Abstand von 50px zum oberen Rand setzen */
+	position: relative;  /* Position des Button-Containers auf "relative" setzen */
 }
 
 button {
-	padding: 10px 20px;
-	margin: 0 10px;
-	background-color: #fff;
-	border: none;
-	color: #000;
-	font-size: 1em;
-	cursor: pointer;
-	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+	padding: 10px 20px;  /* Innenabstand von 10px oben/unten und 20px links/rechts hinzufügen */
+	margin: 0 10px;  /* Außenabstand von 0 oben/unten und 10px links/rechts hinzufügen */
+	background-color: #fff;  /* Hintergrundfarbe des Buttons auf weiß setzen */
+	border: none;  /* Keinen Rahmen um den Button anzeigen */
+	color: #000;  /* Textfarbe des Buttons auf schwarz setzen */
+	font-size: 1em;  /* Schriftgröße des Buttons auf 1em (entspricht 16px) setzen */
+	cursor: pointer;  /* Mauszeiger-Cursor beim Überfahren des Buttons auf "Zeiger" setzen */
+	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;  /* Hintergrundfarbe-, Textfarbe- und Box-Schatten-Übergangseffekte mit Dauer von 0.5 Sekunden und einem sanften Beschleunigungs- und Verzögerungsverhalten hinzufügen */
 }
 
 button.dark-mode {
-	background-color: #000;
-	color: #fff;
+	background-color: #000; /* Hintergrundfarbe wird auf Schwarz gesetzt */
+	color: #fff; /* Schriftfarbe wird auf Weiß gesetzt */
 	box-shadow: 0px 0px 10px #fff, 0px 0px 20px #ff0, 0px 0px 30px #ff0, 0px 0px 40px #ff0, 0px 0px 70px #ff0;
+	/* Box-Schatten wird auf Weiß mit mehreren Farbstopps und Größen gesetzt */
 }
 
 .night-mode-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: none;
-	justify-content: center;
-	align-items: center;
+	position: absolute; /* Positionierung ist absolut */
+	top: 0; /* Oben ist am oberen Rand des Elternelements */
+	left: 0; /* Links ist am linken Rand des Elternelements */
+	width: 100%; /* Breite beträgt 100% des Elternelements */
+	height: 100%; /* Höhe beträgt 100% des Elternelements */
+	display: none; /* Element wird standardmäßig ausgeblendet */
+	justify-content: center; /* Ausrichtung der Inhalte wird horizontal zentriert */
+	align-items: center; /* Ausrichtung der Inhalte wird vertikal zentriert */
 }
 
 .button-container.dark-mode .night-mode-container {
-	display: flex;
+	display: flex; /* Wenn der dunkle Modus aktiviert ist, wird das Element angezeigt */
 }
 
 #night-mode-btn.dark-mode {
-	background-color: #fff;
-	color: #ff0;
-	box-shadow: 0px 0px 10px #ff0;
+	background-color: #fff; /* Hintergrundfarbe wird auf Weiß gesetzt */
+	color: #ff0; /* Schriftfarbe wird auf Gelb gesetzt */
+	box-shadow: 0px 0px 10px #ff0; /* Box-Schatten wird auf Gelb gesetzt */
 }
