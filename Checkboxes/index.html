@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Toggle Checkboxes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Choose your options:</h1>
+      <div class="toggle-container">
+        <div class="checkbox-container">
+          <input type="checkbox" id="fast" class="toggle-checkbox" onchange="limitCheckboxSelection()">
+          <label for="fast" class="toggle-label">Fast</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="cheap" class="toggle-checkbox" onchange="limitCheckboxSelection()">
+          <label for="cheap" class="toggle-label">Cheap</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="good" class="toggle-checkbox" onchange="limitCheckboxSelection()">
+          <label for="good" class="toggle-label">Good</label>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
