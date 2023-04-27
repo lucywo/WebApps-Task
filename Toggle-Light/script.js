@@ -22,3 +22,5 @@ nightBtn.addEventListener('click', function() { // Ein weiterer Event-Listener w
   nightBtn.style.display = 'none'; // Der "night-mode-btn" wird ausgeblendet.
   btn.classList.add('dark-mode'); // Dem "toggle-btn" wird die CSS-Klasse "dark-mode" hinzugefügt.
 });
+
+
